@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h2>JavaScript Maps</h2>
+    <p>Clearing a Map:</p>
+
+    <p id="demo"></p>
+
+    <script>
+        const fruits = new Map([
+            ["apples", 400],
+            ["mangos", 500],
+            ["oranges", 200]
+        ]);
+        fruits.clear();
+        document.getElementById('demo').innerHTML = fruits.size; Map.has()
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<h2>JavaScript Functions</h2>
+
+<p>myObject.fullName() will return John Doe:</p>
+
+<p id="demo"></p>
+<script>
+    const myObject  = {
+        firstName: "john",
+        secondName: "Doe",
+        fullName: function(){
+            return this.firstName + " " + this.secondName; 
+        }
+    }
+    document.getElementById('demo').innerHTML = myObject.fullName();
+</script>
+</body>
+</html>

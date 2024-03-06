@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<h1>JavaScript Dates</h1>
+<h2>Using Date.now()</h2>
+<p>Calculate the number of years since January 1, 1970:</p>
+
+<p id="demo"></p>
+
+<script>
+    const minutes =  1000 * 60;
+    const hour = minutes * 60;
+    const day = hour * 24;
+    const year = day * 365;
+
+    let years = Math.round(Date.now() / year);
+    document.getElementById('demo').innerHTML = years;
+</script>
+</body>
+</html>

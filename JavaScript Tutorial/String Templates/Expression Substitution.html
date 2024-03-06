@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<h1>JavaScript Template Strings</h1>
+<p>Templates allow variables in strings:</p>
+
+<p id="demo"></p>
+
+<p>Templates are not supported in Internet Explorer.</p>
+
+<script>
+    let price = 10;
+    let Vat = 0.25;
+    let total = `Total: ${(price * (1 + Vat)).toFixed(2)}`;
+    document.getElementById('demo').innerHTML = total;
+</script>
+</body>
+</html>

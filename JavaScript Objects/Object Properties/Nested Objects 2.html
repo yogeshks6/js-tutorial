@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<h2>JavaScript Objects</h2>
+<p>Access nested objects:</p>
+
+<p id="demo"></p>
+<script>
+   const myObj = {
+    name: "John",
+    age: 30,
+    cars: {
+        car1: "BMW",
+        car2: "Fiat",
+        car3: "Ford" 
+    }
+   }
+   document.getElementById('demo').innerHTML = 
+   myObj.cars["car2"];
+</script>
+</body>
+</html>

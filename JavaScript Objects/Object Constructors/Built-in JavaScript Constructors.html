@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>JavaScript Object Constructors</h2>
+
+    <p id="demo"></p>
+
+    <script>
+        const x1 = new String();
+        const x2 = new Number();
+        const x3 = new Boolean();
+        const x4 = new Object();
+        const x5 = new Array();
+        const x6 = new RegExp();
+        const x7 = new Function();
+        const x8 = new Date();
+
+        document.getElementById('demo').innerHTML =
+            "x1 : " + typeof x1 + "<br>" +
+            "x2 : " + typeof x2 + "<br>" +
+            "x3 : " + typeof x3 + "<br>" +
+            "x4 : " + typeof x4 + "<br>" +
+            "x5 : " + typeof x5 + "<br>" +
+            "x6 : " + typeof x6 + "<br>" +
+            "x7 : " + typeof x7 + "<br>" +
+            "x8 : " + typeof x8;
+    </script>
+</body>
+
+</html>
