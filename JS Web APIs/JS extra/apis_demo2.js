@@ -14,6 +14,7 @@ async function hello() {
         document.getElementById('stock').innerHTML = data['stock']
         document.getElementById('brand').innerHTML = data['brand']
         document.getElementById('category').innerHTML = data['category']
+        document.getElementById('thumbnail.jpg').src = data['thumbnail']
         document.getElementById("price").innerHTML = data['price']
         document.getElementById("image1").src = data['images'][0]
         document.getElementById("image2").src = data['images'][1]
@@ -38,6 +39,8 @@ function bello() {
             document.getElementById('stock').innerHTML = response['stock']
             document.getElementById('brand').innerHTML = response['brand']
             document.getElementById('category').innerHTML = response['category']
+            document.getElementById('thumbnail.jpg').src = response['thumbnail']
+          
         
 
             document.getElementById("image1").src = response['images'][0]
